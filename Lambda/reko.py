@@ -22,5 +22,6 @@ try:
                         Item={'images': {'S': "eagle.jpg"},
                               'Labels': {'M': labels}
                               })
+    
 except ClientError:
     print("error")
