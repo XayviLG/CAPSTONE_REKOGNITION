@@ -55,11 +55,11 @@ def upload_file(file_name, bucket, object_name=None):
 print('### Utility to Upload files to S3: ###\n')
 
 # getting the list of files to choose from the local computer
-path = '/Users/Nzorro/Pictures/S3Uploads/'
+path = '/Users/javierlg/downloads/reco_photo/'
 output = subprocess.run(['ls',path],stdout=subprocess.PIPE, text=True).stdout.split('\n')
 
 # the bucket where the uploads are going to
-bucket_name = 'nz-images-bucket'
+bucket_name = 'rekofacesnf'
 
 options_list = []
 for file in output:
